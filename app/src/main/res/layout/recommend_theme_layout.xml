@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_theme_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeee"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_drawer_theme_cancel"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#4e4444"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="推荐主题"
+            android:textColor="#4e4444"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_drawer_theme_confirm"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#4e4444"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="全部"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="盗墓笔记"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_funko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="FUNKO"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_funko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_gsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="GSC"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_gsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="古风原创"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_sword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="剑侠情愿叁"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_sword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="零食谷"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_moon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="秦时明月"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_quanzhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="全职高手"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_quanzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_theme_gress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="长草颜文字"
+            android:textColor="#4e4444"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_theme_gress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/filter_type_selected" />
+    </RelativeLayout>
+</LinearLayout>

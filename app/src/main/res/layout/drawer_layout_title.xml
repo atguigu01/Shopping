@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ib_drawer_layout_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/top_bar_left_back" />
+
+    <TextView
+        android:id="@+id/tv_ib_drawer_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="筛选"
+        android:textColor="#4e4444"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ib_drawer_layout_confirm"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#4e4444" />
+</LinearLayout>

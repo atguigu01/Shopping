@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_select_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeee"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:visibility="visible">
+
+    <include layout="@layout/drawer_layout_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#eeee" />
+
+    <RadioGroup
+        android:id="@+id/rg_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeee"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_select_hot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/drawer_layout_btn_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="热卖"
+            android:textColor="@drawable/drawer_layout_text_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_select_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/drawer_layout_btn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="新品"
+            android:textColor="@drawable/drawer_layout_text_selector" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rl_select_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:textColor="#303235" />
+
+        <TextView
+            android:id="@+id/tv_drawer_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/home_arrow_right"
+            android:text="不限"
+            android:textColor="#303235" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_select_recommend_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐主题"
+            android:textColor="#303235" />
+
+        <TextView
+            android:id="@+id/tv_drawer_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/home_arrow_right"
+            android:text="全部"
+            android:textColor="#303235" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_select_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类别"
+            android:textColor="#303235" />
+
+        <TextView
+            android:id="@+id/tv_drawer_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/home_arrow_right"
+            android:text="全部"
+            android:textColor="#303235" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeee" />
+
+    <Button
+        android:id="@+id/btn_select_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/new_black_background_btn"
+        android:text="重置"
+        android:textColor="#303235" />
+</LinearLayout>

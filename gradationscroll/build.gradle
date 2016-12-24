@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release'//添加
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+}
+//添加
+//publish {
+//    userOrg = 'huang'//bintray.com用户名
+//    groupId = 'com.hankkin'//jcenter上的路径
+//    artifactId = 'gradation'//项目名称
+//    publishVersion = '1.0.1'//版本号
+//    desc = '放QQ动态标题栏渐变'//描述，不重要
+//    website = 'https://github.com/Hankkin/SwipeRefreshDemo'//网站，不重要
+//}
