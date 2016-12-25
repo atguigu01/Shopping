@@ -40,4 +40,4 @@
 5、采用Html5和Android互调技术实现详情页面；
 6、集成支付宝支付功能；
 七、运行效果
-![image](https://github.com/atguigu01/Shopping/gif/硅谷商城效果演示.gif)   
+![image](https://github.com/atguigu01/Shopping/blob/master/gif/%E7%A1%85%E8%B0%B7%E5%95%86%E5%9F%8E%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA.gif)   
